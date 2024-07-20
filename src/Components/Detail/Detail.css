@@ -1,0 +1,94 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    overflow: scroll;
+
+    .detail-user-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        border-bottom: 1px solid #435367;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        img{
+            height: 100px;
+            width: 100px;
+        }
+
+        .gradient-text{
+            background: linear-gradient(to right, #4c83f0, #8b76d3, #d86573, #d3677b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+        }
+    }
+    .info {
+        padding: 20px;
+        .option{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .title{
+                display: flex;
+                justify-content: space-between;
+                .photos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .photoItem{
+                        img{
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blockUserBtn{
+        outline: none;
+        border: none;
+        background-color: red;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        height: 25px;
+        width: 80%;
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blockUserBtn:hover{
+        background-color: #78050c;
+        cursor: pointer;
+    }
+    .logout{
+        outline: none;
+        border: none;
+        background-color: blue;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        height: 25px;
+        width: 80%;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logout:hover {
+        cursor: pointer;
+        background-color: rgb(7, 7, 84);
+    }
+}

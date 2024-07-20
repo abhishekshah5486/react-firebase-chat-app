@@ -1,0 +1,56 @@
+.chat-list {
+    overflow: scroll;
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .searchBar{
+        background-color: black;
+        height: 30px;
+        width: 20vw;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        border-radius: 25px;
+        padding-left: 10px;
+    }
+    input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: white;
+    }
+    .faMagnifyingGlass, .faPlus{
+        /* font-size: 15px; */
+    }
+
+    .item {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        border-bottom: 1px solid #435367;
+        img{
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+        }
+        .texts{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p{
+                color: #9badc6;
+                font-size: 15px;
+            }
+        }
+    } 
+    .item:hover{
+        background-color: rgb(3, 3, 108);
+        cursor: pointer;
+        border: 0.5px solid white;
+        border-radius: 10px;
+    }  
+}

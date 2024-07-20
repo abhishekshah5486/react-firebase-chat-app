@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #131314;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.firebase-chat-app {
+    height: 85vh;
+    width: 90vw;
+    border-radius: 10px;
+    border-color: #435367;
+    background-color: #041e49;
+    border-width: 2px;
+    display: flex;
+
+    &.logged-in {
+        background-color: #041e49;
+      }
+    
+    &.logged-out {
+        background: linear-gradient(to bottom left, #460c0a, #000000, #000000);
+    }
+}

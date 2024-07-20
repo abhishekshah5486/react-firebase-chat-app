@@ -1,0 +1,115 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #435367;
+    width: 50%;
+
+    .top-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #435367;
+
+        .chat-user-info {
+            display: flex;
+            gap: 20px;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+            .texts{
+                p{
+                    font-size: 15px;
+                    color: #9badc6;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    }
+    .center-section{
+        overflow: scroll;
+        padding: 20px;
+        height: 70vh;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .message{
+            max-width: 70%;
+            display: flex;
+            gap: 15px;
+            img{
+                height: 25px;
+                width: 25px;
+            }
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                p{
+                    background-color: black;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border-top-left-radius: 0px;
+                }
+            }
+            &.own{
+                align-self: flex-end;
+                .texts{
+                        p{
+                            background-color: blue;
+                            padding: 10px;
+                            border-radius: 20px;
+                        }
+                }
+            }
+        }
+    }
+    .bottom-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        border-top: 1px solid #435367;
+        gap: 10px;
+
+        .btm-section-icons{
+            display: flex;
+            gap: 15px;
+            font-size: 18px;
+        }
+
+        input{
+            outline: none;
+            border: none;
+            height: 45px;
+            width: 70%;
+            background-color: black;
+            border-radius: 50px;
+            padding: 10px;
+        }
+        .emoji{
+            font-size: 18px;
+            position: relative;
+            .emoji-picker{
+                position: absolute;
+                bottom: 50px;
+                left: 0;
+            }
+        }
+        .sendBtn{
+            outline: none;
+            border: none;
+            background-color: blue;
+            height: 35px;
+            width: 50px;
+            border-radius: 50px;
+            color: white;
+        }   
+    }
+}
